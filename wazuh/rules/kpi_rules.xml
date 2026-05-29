@@ -1,0 +1,30 @@
+<group name="mobile_network,kpi,siem">
+
+  <rule id="100001" level="12">
+    <field name="alert_level">CRITICAL</field>
+    <field name="technology">LTE</field>
+    <description>4G LTE - RSRP critique detecte signal inferieur a -100 dBm</description>
+    <group>network_anomaly,qos_degradation</group>
+  </rule>
+
+  <rule id="100002" level="7">
+    <field name="alert_level">WARNING</field>
+    <field name="technology">LTE</field>
+    <description>4G LTE - RSRP degrade qualite moderee</description>
+    <group>network_warning</group>
+  </rule>
+
+  <rule id="100003" level="12">
+    <field name="alert_level">CRITICAL</field>
+    <field name="technology">UMTS</field>
+    <description>3G UMTS - RSCP critique detecte signal inferieur a -95 dBm</description>
+    <group>network_anomaly,umts_degradation</group>
+  </rule>
+
+  <rule id="100004" level="14">
+    <field name="anomaly">true</field>
+    <description>Anomalie KPI detectee par Isolation Forest</description>
+    <group>ml_anomaly,network_security</group>
+  </rule>
+
+</group>

@@ -1,0 +1,17 @@
+# Logs générés (trop volumineux)
+logs/
+*.log
+
+# Données terrain (confidentielles)
+data/DT1.xlsx
+data/DT2.csv
+data/DT3.csv
+
+# Docker volumes
+esdata/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.env
